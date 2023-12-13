@@ -1,0 +1,38 @@
+ASSINGNMENT 2
+      Git Commands:
+          1.git init
+          2.git config & status
+          3.git commit –m
+          4.git branch<branch name>
+          5.git merge<branch name>
+          6.git remote (push or pull)
+          7.git Fetch
+          8.git reset<file>
+          9.git log
+         10.git tag<tag name>
+         11.git diff
+         12.git stash pop
+         13.git submodules
+          14.git checkout <commit>
+          15.git-ls-Files
+           16.git clean
+           17.git reflog
+           18.git-cherry-pick<commit>
+           19.git rebase<commit>
+           20.git-diff---cached.
+      21.git-Fetch—prune
+      22.git log –oneline
+      23.git blame <file>
+      24.git show –name—only <commit>
+   25.git update—index –assume—unchanged<file>
+      26.git revert<commit>
+      27.git biset start
+      28.git grep<pattern>
+      29.ls.git/hooks/.
+      30.git archive –format=<format>.
+
+                                                                                                  -Sanjey GM
+								        727822tuam048
+                               
+
+

@@ -1,0 +1,115 @@
+REACT-ASSIGNMENT I
+
+1)Write a java script function called countVowel that returns the number of vowels in a given String
+Solution:
+	function countVowel(str) {
+  var count = 0;
+  str=str.toLowerCase();
+  for(var i=0;i<str.length;i++){
+    if(str.charAt(i)=="a"||str.charAt(i)=="e"||str.charAt(i)=="i"||
+       str.charAt(i)=="o"||str.charAt(i)=="u"){
+       count++; 
+    }
+  }
+  return count;
+}
+console.log(countVowel("Hello")) 
+console.log(countVowel("Umbrella")) 
+
+Output:
+	2
+	3
+ 
+2)Write a java script program called letterCount and uses loop to count letters in a String
+Solution: 
+	function letterCount(str, c) {
+  var count=0;
+  str=str.toLowerCase(); //Case insensitive
+  for(var i=0;i<str.length;i++){
+     if(str.charAt(i)==c){ 
+       count++; //Increment count
+     }
+  }
+  return count;
+}
+
+console.log(letterCount("Connect",'c')) 
+console.log(letterCount("first person",'s')) 
+
+Output:
+	2
+	2
+ 
+3)Write a java script module that perform basic mathematical operations
+Solution:
+mathOperations.js
+function add(a, b) {
+  return a + b;
+}
+function subtract(a, b) {
+  return a - b;
+}
+function multiply(a, b) {
+  return a * b;
+}
+function divide(a, b) {
+  if (b !== 0) {
+    return a / b;
+  } else {
+    return "Cannot divide by zero";
+  }
+}
+
+// Exporting functions to make them accessible from other files
+module.exports = {
+  add,
+  subtract,
+  multiply,
+  divide,
+};
+main.js
+const math = require('./mathOperations');
+const resultAdd = math.add(5, 3);
+const resultSubtract = math.subtract(8, 4);
+const resultMultiply = math.multiply(2, 6);
+const resultDivide = math.divide(10, 2);
+console.log(`Addition: ${resultAdd}`);
+console.log(`Subtraction: ${resultSubtract}`);
+console.log(`Multiplication: ${resultMultiply}`);
+console.log(`Division: ${resultDivide}`);
+
+Output:
+	Addition: 8
+Subtraction: 4
+Multiplication: 12
+Division: 5
+4)An example of DOM
+Solution:
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	 <title>Simple DOM Example</title>
+</head>
+<body>
+  	<h1>DOM Manipulation Example</h1>
+  	<p id="demoParagraph">This is a simple paragraph.</p>
+  	<button id="changeContentButton">Change Content</button>
+  	<script src="script.js"></script>
+</body>
+</html>
+ script.js
+function changeContent() {
+  const demoParagraph = document.getElementById('demoParagraph');
+
+demoParagraph.textContent = 'Content changed! Clicked the button.';
+}
+document.getElementById('changeContentButton').addEventListener('click', changeContent);
+
+Output:
+	The output of this HTML document, when viewed in a web browser.
+
+	
+	
+
